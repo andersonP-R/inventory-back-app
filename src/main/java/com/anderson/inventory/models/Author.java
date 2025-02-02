@@ -25,7 +25,7 @@ public class Author extends BaseEntity{
     //@TableGenerator(name = "author_id_gen", table = "id_generator", pkColumnName = "id_name", pkColumnValue = "id_value", allocationSize = 1)
     //private Integer id;
 
-    @Column(name = "f_name")
+    @Column(name = "fi_name")
     private String firstName;
 
     private String lastName;
