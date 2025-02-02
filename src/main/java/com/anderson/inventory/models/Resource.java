@@ -11,8 +11,11 @@ import lombok.experimental.SuperBuilder;
 @AllArgsConstructor
 @SuperBuilder
 @Entity
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name = "resource_type")
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS) // join all props from parent class (Resource) into Video table
+// or whatever table that we use
+//@Inheritance(strategy = InheritanceType.JOINED) to join queries into a single one
+//@Inheritance(strategy = InheritanceType.SINGLE_TABLE) join all values tables child in a single table (Resource table)
+//@DiscriminatorColumn(name = "resource_type") join all values tables child in a single table (Resource table)
 public class Resource {
 
     @Id

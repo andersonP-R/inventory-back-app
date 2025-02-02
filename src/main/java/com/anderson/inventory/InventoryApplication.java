@@ -15,7 +15,7 @@ public class InventoryApplication {
 	}
 
 
-	//@Bean
+	@Bean
 	public CommandLineRunner commandLineRunner(
 			VideoRepository videoRepository
 	) {
