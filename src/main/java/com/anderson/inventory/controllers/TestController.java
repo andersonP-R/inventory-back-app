@@ -1,5 +1,6 @@
 package com.anderson.inventory.controllers;
 
+import com.anderson.inventory.repositories.AuthorRepository;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
